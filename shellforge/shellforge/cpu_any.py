@@ -66,7 +66,7 @@ class Binutils:
         self.CC = CC
         self.OBJDUMP = OBJDUMP
 #        self.CFLAGS = "-O3 -S -fPIC -Winline -finline-functions -ffreestanding -fomit-frame-pointer -fno-zero-initialized-in-bss "+CFLAGS
-        self.CFLAGS = "-O3 -S -fPIC -Winline -finline-functions -ffreestanding -fomit-frame-pointer "+CFLAGS
+        self.CFLAGS = "-Os -S -fPIC -Winline -finline-functions -ffreestanding -fomit-frame-pointer "+CFLAGS
         self.INCLUDES = "-isystem '%s' -isystem '%s'" % (sflib_root, "%s/%s" %(sflib_root,arch))
         self.INCLUDES += " -include %s/%s/sflib.h" % (sflib_root,arch)
         self.LDFLAGS = LDFLAGS
